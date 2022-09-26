@@ -17,7 +17,8 @@ class JsonPlaceHolderViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        cellNib()
         initDelegate()
         initService()
     }
@@ -35,6 +36,11 @@ class JsonPlaceHolderViewController: UIViewController {
         } onFail: { (data) in
             print(data ?? "")
         }
+    }
+    
+    private func cellNib() {
+        let cellNib = UINib(nibName: "JsonPlaceHolderTableViewCell", bundle: nil)
+        tableViewJsonPlaceHolder.register(cellNib, forCellReuseIdentifier: "cell")
     }
 }
 

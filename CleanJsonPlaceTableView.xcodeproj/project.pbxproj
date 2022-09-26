@@ -19,6 +19,8 @@
 		711EF7A228E0F2BC00C4551E /* JsonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EF7A128E0F2BC00C4551E /* JsonTableView.swift */; };
 		711EF7A528E0F85E00C4551E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 711EF7A428E0F85E00C4551E /* Alamofire */; };
 		711EF7A728E0F89800C4551E /* JsonPlaceHolderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EF7A628E0F89800C4551E /* JsonPlaceHolderService.swift */; };
+		7167730C28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7167730A28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.swift */; };
+		7167730D28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7167730B28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		711EF79D28E0DDBF00C4551E /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		711EF7A128E0F2BC00C4551E /* JsonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTableView.swift; sourceTree = "<group>"; };
 		711EF7A628E0F89800C4551E /* JsonPlaceHolderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceHolderService.swift; sourceTree = "<group>"; };
+		7167730A28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceHolderTableViewCell.swift; sourceTree = "<group>"; };
+		7167730B28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JsonPlaceHolderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		711EF79328E0DA1300C4551E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7167730928E19EB1003F63B8 /* JsonTableViewCell */,
 				711EF7A028E0F28F00C4551E /* Subview */,
 				711EF79828E0DA6100C4551E /* JsonPlaceHolderViewController.swift */,
 				711EF79928E0DA6100C4551E /* JsonPlaceHolderViewController.xib */,
@@ -130,6 +135,15 @@
 				711EF7A128E0F2BC00C4551E /* JsonTableView.swift */,
 			);
 			path = Subview;
+			sourceTree = "<group>";
+		};
+		7167730928E19EB1003F63B8 /* JsonTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7167730A28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.swift */,
+				7167730B28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.xib */,
+			);
+			path = JsonTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +214,7 @@
 				711EF78728E0D9A200C4551E /* Assets.xcassets in Resources */,
 				711EF79B28E0DA6100C4551E /* JsonPlaceHolderViewController.xib in Resources */,
 				711EF78528E0D9A100C4551E /* Main.storyboard in Resources */,
+				7167730D28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711EF78228E0D9A100C4551E /* ViewController.swift in Sources */,
+				7167730C28E19EE7003F63B8 /* JsonPlaceHolderTableViewCell.swift in Sources */,
 				711EF79E28E0DDBF00C4551E /* PostModel.swift in Sources */,
 				711EF77E28E0D9A100C4551E /* AppDelegate.swift in Sources */,
 				711EF7A728E0F89800C4551E /* JsonPlaceHolderService.swift in Sources */,

@@ -27,14 +27,18 @@ final class JsonTableView: NSObject {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = items[indexPath.row].title
-        cell.detailTextLabel?.text = items[indexPath.row].story
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! JsonPlaceHolderTableViewCell
+        cell.titleLabel.text = items[indexPath.row].title
+        cell.storyLabel.text = items[indexPath.row].story
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.onSelected(item: items[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
 
