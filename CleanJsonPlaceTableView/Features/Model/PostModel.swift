@@ -9,8 +9,7 @@ import Foundation
 
 // MARK: - POSTModel
 struct POSTModel: Codable {
-    let userID: Int?
-    let id: Int?
-    let title: String?
-    let Body: String?
+    let title: String
+    let story: String
 }
+

@@ -12,12 +12,12 @@ protocol JsonPlaceHolderProtocol {
 }
 
 enum JsonPlaceHolderPath: String {
-    case POSTS = "/posts"
+    case POSTS = "/atilsamancioglu/BTK-iOSDataSet/master/dataset.json"
 }
 
 extension JsonPlaceHolderPath {
     func withBaseUrl() -> String {
-        return "https://jsonplaceholder.typicode.com\(self.rawValue)"
+        return "https://raw.githubusercontent.com\(self.rawValue)"
     }
 }
 

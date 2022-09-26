@@ -8,18 +8,20 @@
 import UIKit
 
 class JsonPlaceHolderViewController: UIViewController {
-    @IBOutlet weak var tableViewJsonPlaceHolder: UITableView!
     
+    // MARK: - UI Elements
+    @IBOutlet weak var tableViewJsonPlaceHolder: UITableView!
+    // MARK: - Properties
     private let jsonTableView: JsonTableView = JsonTableView()
     private let jsonService: JsonPlaceHolderService = JsonPlaceHolderService()
-    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initDelegate()
         initService()
     }
-    
+    // MARK: - Functions
     private func initDelegate() {
         tableViewJsonPlaceHolder.delegate = jsonTableView
         tableViewJsonPlaceHolder.dataSource = jsonTableView
@@ -38,7 +40,7 @@ class JsonPlaceHolderViewController: UIViewController {
 
 extension JsonPlaceHolderViewController: JsonTableViewOutput {
     func onSelected(item: POSTModel) {
-        print(item.Body ?? "" )
+        print(item.title)
     }
     
     
