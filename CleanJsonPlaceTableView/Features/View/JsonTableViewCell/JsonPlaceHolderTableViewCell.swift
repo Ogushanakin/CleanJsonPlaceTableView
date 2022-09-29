@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JsonPlaceHolderTableViewCell: UITableViewCell {
+final class JsonPlaceHolderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var storyLabel: UILabel!

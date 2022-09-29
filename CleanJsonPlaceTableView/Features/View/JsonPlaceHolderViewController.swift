@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JsonPlaceHolderViewController: UIViewController {
+final class JsonPlaceHolderViewController: UIViewController {
     
     // MARK: - UI Elements
     @IBOutlet weak var tableViewJsonPlaceHolder: UITableView!
@@ -48,6 +48,4 @@ extension JsonPlaceHolderViewController: JsonTableViewOutput {
     func onSelected(item: POSTModel) {
         print(item.title)
     }
-    
-    
 }
